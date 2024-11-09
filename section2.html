@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with Animations</title>
+  <link rel="stylesheet" href="section2.css">
+  <!-- Textillate and Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.3/locomotive-scroll.min.css" />
+
+</head>
+<body data-scroll-container>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Finsweet</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <button class="subscribe-btn">Subscribe</button>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <section class="featured-post" data-scroll data-scroll-speed="1.5">
+    <div class="content">
+      <h3 class="textillate" data-textillate-options='{"in": {"effect": "fadeInDown"}}'>Featured Post</h3>
+      <h2 class="textillate" data-textillate-options='{"in": {"effect": "fadeInLeft"}}'>Step-by-step guide to choosing great font pairs</h2>
+      <p>By John Doe | May 29, 2022</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      <a href="#" class="read-more">Read More ></a>
+    </div>
+    <div class="image">
+      <img src="./images/man-in-white-dress-shirt-sitting-on-black-rolling-chair-while-facing-black-computer-set-and-smiling-840996.svg" alt="Featured Image" data-scroll data-scroll-speed="2">
+    </div>
+  </section>
+
+  <section class="all-posts-section" data-scroll>
+    <h1 class="textillate" data-textillate-options='{"in": {"effect": "fadeInDown"}}'>All Posts</h1>
+
+    <div class="post-card" data-scroll data-scroll-speed="1.5">
+      <img src="./images/two-women-in-front-of-dry-erase-board-1181533-1.svg" alt="Post Image 1">
+      <div class="post-content">
+        <p class="category">Startup</p>
+        <h2>Design tips for designers that cover everything you need</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      </div>
+    </div>
+
+    <div class="post-card" data-scroll data-scroll-speed="1.5">
+      <img src="./images/photo-of-people-walking-on-hallway-3182811.svg" alt="Post Image 2">
+      <div class="post-content">
+        <p class="category">Business</p>
+        <h2>How to build rapport with your web design clients</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      </div>
+    </div>
+
+    <div class="post-card" data-scroll data-scroll-speed="1.5">
+        <img src="./images/photo-of-woman-looking-at-man-3183173.svg" alt="Post Image 2">
+        <div class="post-content">
+          <p class="category">Business</p>
+          <h2>How to build rapport with your web design clients</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+        </div>
+      </div>
+
+      <div class="post-card" data-scroll data-scroll-speed="1.5">
+        <img src="./images/three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.svg" alt="Post Image 2">
+        <div class="post-content">
+          <p class="category">Business</p>
+          <h2>How to build rapport with your web design clients</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+        </div>
+      </div>
+
+      <div class="post-card" data-scroll data-scroll-speed="1.5">
+        <img src="./images/two-women-in-front-of-dry-erase-board-1181533-1.svg" alt="Post Image 1">
+        <div class="post-content">
+          <p class="category">Startup</p>
+          <h2>Design tips for designers that cover everything you need</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+        </div>
+      </div>
+    <!-- Add more post-card elements as needed -->
+
+    <div class="pagination">
+      <a href="#" class="prev">Prev</a>
+      <a href="#" class="next">Next</a>
+    </div>
+  </section>
+
+
+
+    <!-- All Categories Section -->
+    <section class="all-categories-section" data-scroll>
+      <h1 class="textillate" data-textillate-options='{"in": {"effect": "fadeInDown"}}'>All Categories</h1>
+      <div class="category-cards">
+        <div class="category-card" data-scroll>
+          <h2>Business</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="category-card active" data-scroll>
+          <h2>Startup</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="category-card" data-scroll>
+          <h2>Economy</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="category-card" data-scroll>
+          <h2>Technology</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Call to Action Section -->
+    <section class="cta-section" data-scroll>
+      <h2>Join our team to be a part of our story</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+      <a href="#" class="cta-button">Join Now</a>
+    </section>
+  
+    <!-- Footer Section -->
+    <footer class="footer-section" data-scroll>
+      <div class="footer-content">
+        <h2>Subscribe to our newsletter to get latest updates and news</h2>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Enter Your Email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>Finsweet 118 2561 Finsweet</p>
+        <p>hello@finsweet.com | 020 7993 2905</p>
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+<!-- Include jQuery first -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Then lettering.js, which requires jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+
+<!-- Finally, textillate.js, which also requires jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.3/locomotive-scroll.min.js"></script>
+  <script src="section2.js"></script>
+</body>
+</html>
